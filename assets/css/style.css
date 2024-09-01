@@ -4,6 +4,7 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .bgBlurShade {
@@ -69,10 +70,44 @@ header {
 .project_card {
     height: 320px;
     width: auto;
-    background-color: red;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 1200px) {
+    .project_card {
+        height: 290px;
+        width: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .project_card {
+        height: 250px;
+        width: auto;
+    }
+}
+
+@media (max-width: 769px) {
+    .project_card {
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media (max-width: 525px) {
+    .project_card {
+        height: 250px;
+        width: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .project_card {
+        height: 210px;
+        width: auto;
+    }
 }
 
 .projectImage {
