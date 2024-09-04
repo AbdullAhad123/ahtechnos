@@ -134,6 +134,16 @@ header {
     transition: transform 0.4s ease;
 }
 
+.projectLinks{
+    font-size: 1.75rem;
+    color: #bdb8ca;
+    transition: var(--trans);
+}
+
+.projectLinks:hover {
+    color: var(--yellow) !important;
+}
+
 #portfolioOptions .nav-link {
     padding: var(--btn_padding);
     color: var(--light);
