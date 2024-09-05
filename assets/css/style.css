@@ -69,11 +69,11 @@ header {
 }
 
 .stack_item {
-    border: 1px solid #8766eb8d;
+    border: 1px solid #b4a5e4a5;
     padding: 0.4rem 0.85rem;
     border-radius: 40px;
     font-size: 0.85rem;
-    color: #987ceda5;
+    color: #d0c2f9a5;
 }
 
 .hiddenCards {
@@ -167,8 +167,8 @@ header {
 }
 
 #portfolioOptions .nav-link.active {
-    color: var(--blue);
-    border: 1px solid var(--blue);
+    color: #d0c2f9a5;
+    border: 1px solid #d0c2f9a5;
 }
 
 /* team  */
