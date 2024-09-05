@@ -7,6 +7,14 @@ header {
     overflow: hidden;
 }
 
+@media (max-width: 991px) {
+    header {
+        min-height: 400px;
+        padding-top: 8rem;
+        padding-bottom: 3rem;
+    }
+}
+
 .bgBlurShade {
     height: 40px;
     width: 400px;
@@ -32,6 +40,12 @@ header {
     width: 100%;
     border-radius: 20px;
     padding: 4rem 1.5rem;
+}
+
+@media (max-width: 535px) {
+    #mottoSlides .carousel-item {
+        padding: 2rem 0.75rem;
+    }
 }
 
 .mottoSlide1 {

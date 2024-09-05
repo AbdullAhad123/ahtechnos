@@ -129,6 +129,19 @@ html {
     border-radius: 100px;
 }
 
+.navbar_sm_logo {
+    display: none;
+}
+
+@media (max-width: 525px) {
+    .navbar_lg_logo {
+        display: none;
+    }
+    .navbar_sm_logo {
+        display: block;
+    }
+}
+
 .navbar_parent {
     max-width: 1140px;
     margin: auto;
