@@ -115,8 +115,17 @@
     padding: 0.4rem 0.85rem;
     border-radius: 40px;
     font-size: 0.8rem;
+    transition: 0.25s;
     color: #a386ff;
 }
+
+.stack_item:hover {
+    color: var(--dark);
+    background: #a386ff;
+}
+
+
+
 /* porjects  */
 .project_card {
     height: 320px;
