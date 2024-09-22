@@ -29,7 +29,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
 
     <script type="application/ld+json">
@@ -42,109 +41,128 @@
           "description": "Innovative web and app development services."
         }
     </script>
-        
 
-    <div id="cursorFollowerDot" class="cursorFollowerDot"></div>
-
+    <div class="cursor"></div>
+    
     <div id="mainWrapper">
-        <div class="navbar_parent">
-            <nav class="navbar navbar-expand-lg py-2" id="navbar">
-                <div class="container-fluid my-1 px-lg-4">
-                    <a class="navbar-brand" href="index.html" aria-label="wbesite logo">
-                        <img src="assets/img/ahtechnos_logo.png" class="navbar_lg_logo" width="160" height="auto" alt="AH Technos logo">
-                        <img src="assets/img/ahtechnolo_sm_logo.png" class="navbar_sm_logo" loading="lazy" width="45" height="45" alt="AH Technos logo">
-                    </a>
-                    <div class="d-flex align-items-center gap-1">
-                        <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" class="btn_blue d-lg-none d-inline-flex">Contact</a>
-                        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="22" height="22" fill="var(--light)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav my-lg-0 my-3 align-items-lg-center">
-                            <a class="nav-link" href="index.html">Home</a>
-                            <a class="nav-link" href="#about">About</a>
-                            <a class="nav-link" href="#services">Services</a>
-                            <a class="nav-link" href="#portfolio">Portfolio</a>
-                            <button 
-                                onclick="window.open('mailto:business@ahtechnos.com', '_blank');" 
-                                class="btn_blue mx-1 d-lg-inline-flex d-none">
-                                Contact
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </nav>         
-        </div>
-
-        <header>
-            <div class="container-lg z-1">
-                <div class="col-lg-6 col-md-7 col-12 mx-auto">
-                    <h1 class="text-center my-2 text_light display-4 fw-medium">Transform <br> your business with AH TECHNOS</h1>
-                    <div class="my-4 text-center">
-                        <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_blue fs-6 hover_shadow">                            <span class="m-0 me-1">Let's have a chat</span>
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-lg wrapper">
+                <a class="navbar-brand" href="index.html" aria-label="website logo">
+                    <img src="assets/img/ahtechnos_logo.png" class="navbar_lg_logo" width="160" height="auto" alt="AH Technos logo">
+                    <img src="assets/img/ahtechnolo_sm_logo.png" class="navbar_sm_logo" loading="lazy" width="45" height="45" alt="AH Technos logo">
+                </a>
+                <div class="d-flex align-items-center gap-1">
+                    <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" class="btn_blue fs_6 hover_shadow d-lg-none d-block">
+                        <span>
+                            Contact
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
+                        </span>
+                    </a>
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="22" height="22" fill="var(--light)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav my-lg-0 my-3 align-items-lg-center">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="contact.html">
+                            <button aria-label="contact us on whatsapp" class="btn_blue fs_6 hover_shadow d-lg-block d-none">
+                                <span>
+                                    Contact
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
+                                </span>
+                            </button>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="bgBlurShade"></div>
+        </nav>
+
+        <header class="py-2">
+            <div class="container-lg wrapper">
+                <div id="hero" class="p-lg-5 p-4">
+                    <div class="row align-items-center my-3 justify-content-center">
+                        <div class="col-lg-7 col-md-6 col-12 my-2">
+                            <h1 class="my-2 text-white display-5 fw-medium">Transforming your business with Innovation</h1>
+                            <p class="text-white-50 my-2">At AH Technos, we turn your creative vision into reality using innovative technology and delivers innovative business solutions to help you stand out in today's modern world.</p>
+                            <div class="my-3">
+                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_invert_blue fs_6 hover_shadow">
+                                    <span>
+                                        What we offers
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-12 text-center my-2">
+                            <img src="assets/img/header_image.png" width="450" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <section id="motto" class="py-4">
-            <div class="container-lg">
-                <div id="mottoSlides" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
-                    <div class="carousel-inner">
-                        <div class="carousel-item mottoSlide1 active">
-                            <div class="row m-0 align-items-center z-1 my-lg-4 my-2">
-                                <div class="col-lg-7 col-md-6 col-12 my-2">
-                                    <h2 class="fw-medium display-5">Design</h2>
-                                    <p class="my-2 fs_5">Transform your ideas into effective, user-friendly designs. We create visually appealing solutions that resonate with your audience.</p>
-                                    <div class="my-3"><button class="btn_blue">Start your Project</button></div>
-                                </div>
-                                <div class="col-lg-5 col-md-6 col-12 my-2 text-center">
-                                    <img src="assets/img/art-and-design.png" width="150" height="150" class="img-fluid" loading="lazy" alt="design illustration">
-                                </div>
-                            </div>
+        <section class="my-5 py-2">
+            <div class="container-lg wrapper">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
+                        <div class="featuresCard">
+                            <img src="assets/img/art-and-design.png" height="50" width="50" class="mb-2" alt="">     
+                            <p class="my-2 fs-5 text-white fw-medium">Design</p>
+                            <p class="my-2 text-white-50">Transform your ideas into effective, user-friendly designs. We create visually appealing solutions that resonate with your audience.</p>
                         </div>
-                        <div class="carousel-item mottoSlide2">
-                            <div class="row m-0 align-items-center z-1 my-lg-4 my-2">
-                                <div class="col-lg-7 col-md-6 col-12 my-2">
-                                    <h2 class="fw-medium display-5">Develop</h2>
-                                    <p class="my-2 fs_5">Building reliable and scalable software. Our development process ensures your project performs efficiently and meets high standards.</p>
-                                    <div class="my-3"><button class="btn_blue">Start your Project</button></div>
-                                </div>
-                                <div class="col-lg-5 col-md-6 col-12 my-2 text-center">
-                                    <img src="assets/img/code.png" width="150" height="150" class="img-fluid" loading="lazy" alt="develop illustration">
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
+                        <div class="featuresCard">
+                            <img src="assets/img/code.png" height="50" width="50" class="mb-2" alt="">     
+                            <p class="my-2 fs-5 text-white fw-medium">Develop</p>
+                            <p class="my-2 text-white-50">Building reliable and scalable software. Our development process ensures your project performs efficiently and meets high standards.</p>
                         </div>
-                        <div class="carousel-item mottoSlide3">
-                            <div class="row m-0 align-items-center z-1 my-lg-4 my-2">
-                                <div class="col-lg-7 col-md-6 col-12 my-2">
-                                    <h2 class="fw-medium display-5">Deploy</h2>
-                                    <p class="my-2 fs_5">Launching your project smoothly and effectively. We handle all aspects of deployment, ensuring everything runs flawlessly from start to finish.</p>
-                                    <div class="my-3"><button class="btn_blue">Start your Project</button></div>
-                                </div>
-                                <div class="col-lg-5 col-md-6 col-12 my-2 text-center">
-                                    <img src="assets/img/rocket-ship.png" width="150" height="150" class="img-fluid" loading="lazy" alt="deploy illustration">
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
+                        <div class="featuresCard">
+                            <img src="assets/img/rocket-ship.png" height="50" width="50" class="mb-2" alt="">     
+                            <p class="my-2 fs-5 text-white fw-medium">Deploy</p>
+                            <p class="my-2 text-white-50">Launching your project smoothly and effectively. We handle all aspects of deployment, ensuring everything runs flawlessly from start to finish.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="py-5">
-            <div class="container-lg">
-                <h2 class="fw-medium text_light display-5 text-center">Top-notch Services</h2>
+        <section class="my-5 py-2">
+            <div class="container-lg wrapper">
+                <div class="hireContainer p-md-5 p-4">
+                    <div class="text-center col-lg-10 col-12 mx-auto my-4">
+                        <h2 class="my-0 text-white">Ready to grow your business</h2>
+                        <p class="text-white-75 my-2 fs-6">Our team of experts is dedicated to providing innovative solutions that drive your business forward. Contact us today to start taking your business to new heights.</p>
+                        <div class="my-3">
+                            <a aria-label="hire out team" href="mailto:business@ahtechnos.com" target="_blank" class="btn_invert_blue fs_6 hover_shadow">
+                                <span>
+                                    Hire our team
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="my-5 py-2">
+            <div class="container-lg wrapper">
+                <h2 class="fw-medium text-white fs-1 text-center">Our top-notch services</h2>
+                <p class="text-white-50 my-2 text-center">We provide top-notch, innovative services to help you excel and stand out in today’s competitive market. Discover our offerings and find the perfect fit for your needs.</p>
                 <div class="row m-0 mt-4">
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-3 py-4">
-                            <p class="fs-4 text_light fw-medium my-1">Android App Development</p>
-                            <p class="text-white-50 fw-light my-2">Develop feature-rich Android apps for seamless and engaging user experiences.</p>
+                        <div class="service_card p-4">
+                            <img src="assets/img/android.png" height="40" width="40" class="mb-2" alt="">
+                            <p class="fs-4 text-white fw-medium my-1">Android App Development</p>
+                            <p class="text-white-75 fw-light my-2">Develop feature-rich Android apps for seamless and engaging user experiences.</p>
                             <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
                                 <div class="stack_item">React Native</div>
                                 <div class="stack_item">Kotlin</div>
@@ -152,17 +170,18 @@
                                 <div class="stack_item">Firebase</div>
                             </div>
                             <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                    <span class="m-0 me-1">Get a quote</span>
+                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
+                                    <span class="m-0">Get a quote</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-3 py-4">
-                            <p class="fs-4 text_light fw-medium my-1">iOS App Development</p>
-                            <p class="text-white-50 fw-light my-2">Create high-performance iOS applications with a native and responsive feel.</p>
+                        <div class="service_card p-4">
+                            <img src="assets/img/app-store.png" height="40" width="40" class="mb-2" alt="">
+                            <p class="fs-4 text-white fw-medium my-1">iOS App Development</p>
+                            <p class="text-white-75 fw-light my-2">Create high-performance iOS applications with a native and responsive feel.</p>
                             <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
                                 <div class="stack_item">React Native</div>
                                 <div class="stack_item">Swift</div>
@@ -170,17 +189,18 @@
                                 <div class="stack_item">Xcode</div>
                             </div>
                             <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                    <span class="m-0 me-1">Get a quote</span>
+                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
+                                    <span class="m-0">Get a quote</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-3 py-4">
-                            <p class="fs-4 text_light fw-medium my-1">Frontend Development</p>
-                            <p class="text-white-50 fw-light my-2">Design and build responsive websites using modern and reliable technologies.</p>
+                        <div class="service_card p-4">
+                            <img src="assets/img/responsive_deisgn.png" height="40" width="40" class="mb-2" alt="">
+                            <p class="fs-4 text-white fw-medium my-1">Frontend Development</p>
+                            <p class="text-white-75 fw-light my-2">Design and build responsive websites using modern and reliable technologies.</p>
                             <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
                                 <div class="stack_item">HTML</div>
                                 <div class="stack_item">CSS</div>
@@ -192,17 +212,18 @@
                                 <div class="stack_item">React.js</div>
                             </div>
                             <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                    <span class="m-0 me-1">Get a quote</span>
+                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
+                                    <span class="m-0">Get a quote</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-3 py-4">
-                            <p class="fs-4 text_light fw-medium my-1">Backend Development</p>
-                            <p class="text-white-50 fw-light my-2">Build scalable backend systems with robust and efficient technologies.</p>
+                        <div class="service_card p-4">
+                            <img src="assets/img/backend.png" height="40" width="40" class="mb-2" alt="">
+                            <p class="fs-4 text-white fw-medium my-1">Backend Development</p>
+                            <p class="text-white-75 fw-light my-2">Build scalable backend systems with robust and efficient technologies.</p>
                             <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
                                 <div class="stack_item">Node.js</div>
                                 <div class="stack_item">Express.js</div>
@@ -214,102 +235,62 @@
                                 <div class="stack_item">Firebase</div>
                             </div>
                             <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                    <span class="m-0 me-1">Get a quote</span>
+                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
+                                    <span class="m-0">Get a quote</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="hiddenCards">
-                        <div class="row">
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="service_card p-3 py-4">
-                                    <p class="fs-4 text_light fw-medium my-1">Jam Stack Development</p>
-                                    <p class="text-white-50 fw-light my-2">Develop fast, secure websites using modern and headless CMS technologies</p>
-                                    <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
-                                        <div class="stack_item">Next.js</div>
-                                        <div class="stack_item">Gatsby.js</div>
-                                        <div class="stack_item">GraphQL</div>
-                                        <div class="stack_item">Headless CMS</div>
-                                        <div class="stack_item">FaunaDB</div>
-                                    </div>
-                                    <div class="mt-4 text-end">
-                                        <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                            <span class="m-0 me-1">Get a quote</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                        </a>
-                                    </div>
-                                </div>
+                    <div class="col-md-6 col-12 my-3">
+                        <div class="service_card p-4">
+                            <img src="assets/img/graphics_design.png" height="40" width="40" class="mb-2" alt="">
+                            <p class="fs-4 text-white fw-medium my-1">Graphics Designing</p>
+                            <p class="text-white-75 fw-light my-2">Integrate advanced AI-driven solutions to automate complex business tasks.</p>
+                            <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
+                                <div class="stack_item">Figma</div>
+                                <div class="stack_item">Photoshop</div>
+                                <div class="stack_item">Canva</div>
+                                <div class="stack_item">Illustrator</div>
                             </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="service_card p-3 py-4">
-                                    <p class="fs-4 text_light fw-medium my-1">Web 3.0 Development</p>
-                                    <p class="text-white-50 fw-light my-2">Build decentralized applications utilizing blockchain technology for innovative solutions.</p>
-                                    <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
-                                        <div class="stack_item">Solidity</div>
-                                        <div class="stack_item">Web3.js</div>
-                                        <div class="stack_item">Ethers.js</div>
-                                        <div class="stack_item">React.js</div>
-                                        <div class="stack_item">Waffle</div>
-                                    </div>
-                                    <div class="mt-4 text-end">
-                                        <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                            <span class="m-0 me-1">Get a quote</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="service_card p-3 py-4">
-                                    <p class="fs-4 text_light fw-medium my-1">Web 3.0 NFT Development</p>
-                                    <p class="text-white-50 fw-light my-2">Launch innovative NFT platforms for minting and listing digital assets.</p>
-                                    <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
-                                        <div class="stack_item">React.js</div>
-                                        <div class="stack_item">Next.js</div>
-                                        <div class="stack_item">NFT-listing</div>
-                                        <div class="stack_item">Opensea API</div>
-                                    </div>
-                                    <div class="mt-4 text-end">
-                                        <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                            <span class="m-0 me-1">Get a quote</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="service_card p-3 py-4">
-                                    <p class="fs-4 text_light fw-medium my-1">OpenAI Integration</p>
-                                    <p class="text-white-50 fw-light my-2">Integrate advanced AI-driven solutions to automate complex business tasks.</p>
-                                    <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
-                                        <div class="stack_item">OpenAI API Integration</div>
-                                        <div class="stack_item">ChatGPT Integration</div>
-                                    </div>
-                                    <div class="mt-4 text-end">
-                                        <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_yellow">
-                                            <span class="m-0 me-1">Get a quote</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="mt-4 text-end">
+                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
+                                    <span class="m-0">Get a quote</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 my-3 text-center">
-                        <button class="btn_blue hover_shadow" id="seeMoreServices">Load more</button>
+                    <div class="col-md-6 col-12 my-3">
+                        <div class="service_card p-4">
+                            <img src="assets/img/jamstack_dev.png" height="40" width="40" class="mb-2" alt="">
+                            <p class="fs-4 text-white fw-medium my-1">Jam Stack Development</p>
+                            <p class="text-white-75 fw-light my-2">Develop fast, secure websites using modern and headless CMS technologies</p>
+                            <div class="d-flex align-items-center gap-2 my-3 flex-wrap">
+                                <div class="stack_item">Next.js</div>
+                                <div class="stack_item">Gatsby.js</div>
+                                <div class="stack_item">GraphQL</div>
+                                <div class="stack_item">Headless CMS</div>
+                                <div class="stack_item">FaunaDB</div>
+                            </div>
+                            <div class="mt-4 text-end">
+                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
+                                    <span class="m-0">Get a quote</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="py-4">
-            <div class="container-lg">
+        <section id="about" class="my-5">
+            <div class="container-lg wrapper">
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-md-6 col-12 my-2">
-                        <h2 class="fw-medium text_light display-5">About us</h2>
-                        <p class="my-2 fs_5 fw-light text-white-50">We specialize in delivering cutting-edge web and app solutions that address the evolving needs of modern businesses. Our team of experts crafts innovative solutions tailored to your unique requirements, empowering your business to thrive in the digital landscape.</p>
+                        <h2 class="fw-medium text-white fs-1">About us</h2>
+                        <p class="my-2 fs_5 fw-light text-white-75">We specialize in delivering cutting-edge web and app solutions that address the evolving needs of modern businesses. Our team of experts crafts innovative solutions tailored to your unique requirements, empowering your business to thrive in the digital landscape.</p>
                     </div>
                     <div class="col-lg-5 col-md-6 col-12 my-2 text-center mx-auto">
                         <img src="assets/img/about_us.png" loading="lazy" width="500" class="img-fluid" alt="about AH Technos">
@@ -318,9 +299,10 @@
             </div>
         </section>
 
-        <section id="portfolio" class="py-4">
-            <div class="container-lg">
-                <h2 class="fw-medium text_light display-5 text-center">Our Latest work</h2>
+        <section id="portfolio" class="my-5">
+            <div class="container-lg wrapper">
+                <h2 class="fw-medium text-white fs-1 text-center">Our Latest work</h2>
+                <p class="text-white-50 my-2 text-center">Explore our projects, crafted with dedication and passion, delivering exceptional results that exceed client expectations.</p>
                 <ul class="d-flex align-items-center overflow-x-auto justify-content-center border-0 mt-4" id="portfolioOptions" role="tablist">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All</button>
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Apps</button>
@@ -328,13 +310,13 @@
                 </ul>
                 <div class="tab-content mb-3" id="portfolioOptionsContent">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <div class="row m-0 justify-content-center">
+                        <div class="row justify-content-center">
                             <div class="col-md-6 col-12 my-3">
                                 <div class="project_card">
                                     <img src="assets/img/dalfa_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Dalfa Pak</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Dalfa Pak</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a aria-label="google play link" href="#" class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -349,7 +331,7 @@
                                     <img src="assets/img/B.A.B Digital (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.bab-media.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">BAB Soul Flow Website</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">BAB Soul Flow Website</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -360,7 +342,7 @@
                                     <img src="assets/img/PCO.Link Portfolio post (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.pcolink.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">PCO Portfolio Website</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">PCO Portfolio Website</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -371,7 +353,7 @@
                                     <img src="assets/img/frontpay_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Frontpay</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Frontpay</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.frontpay.dashboard" class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -386,7 +368,7 @@
                                     <img src="assets/img/Quitclaim.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://abdullahad123.github.io/QuitclaimFrontend/html/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">QuitClaim Web App</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">QuitClaim Web App</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -397,7 +379,7 @@
                                     <img src="assets/img/areawide_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Areawide Waterproofing</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Areawide Waterproofing</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a href="#" aria-label="application project link        " class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -412,7 +394,7 @@
                                     <img src="assets/img/giveaway_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Giveaway E-commerce</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Giveaway E-commerce</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.app.giveaway" class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -427,7 +409,7 @@
                                     <img src="assets/img/tutorselevenplus.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://tutorselevenplus.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">TutorsElevenPlus</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">TutorsElevenPlus</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -438,7 +420,7 @@
                                     <img src="assets/img/Trolleymate.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://trolleymate.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">Trolleymate</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Trolleymate</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -449,7 +431,7 @@
                                     <img src="assets/img/Oneli-Builders.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://oneli.capitaltechnologies.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">Oneli Builders</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Oneli Builders</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -464,7 +446,7 @@
                                     <img src="assets/img/dalfa_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Dalfa Pak</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Dalfa Pak</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a href="#" aria-label="application project link        " class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -479,7 +461,7 @@
                                     <img src="assets/img/frontpay_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Frontpay</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Frontpay</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.frontpay.dashboard" class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -494,7 +476,7 @@
                                     <img src="assets/img/areawide_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Areawide Waterproofing</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Areawide Waterproofing</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a href="#" aria-label="application project link        " class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -509,7 +491,7 @@
                                     <img src="assets/img/giveaway_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text_light">Giveaway E-commerce</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Giveaway E-commerce</p>
                                             <div class="d-flex align-items-center gap-1 my-1">
                                                 <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.app.giveaway" class="projectLinks" target="_blank">
                                                     <i class="bx bxl-play-store"></i>
@@ -528,7 +510,7 @@
                                     <img src="assets/img/B.A.B Digital (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.bab-media.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">BAB Soul Flow Website</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">BAB Soul Flow Website</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -539,7 +521,7 @@
                                     <img src="assets/img/PCO.Link Portfolio post (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.pcolink.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">PCO Portfolio Website</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">PCO Portfolio Website</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -550,7 +532,7 @@
                                     <img src="assets/img/tutorselevenplus.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://tutorselevenplus.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">TutorsElevenPlus</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">TutorsElevenPlus</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -561,7 +543,7 @@
                                     <img src="assets/img/Trolleymate.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://trolleymate.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">Trolleymate</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Trolleymate</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -572,7 +554,7 @@
                                     <img src="assets/img/Oneli-Builders.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://oneli.capitaltechnologies.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">Oneli Builders</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">Oneli Builders</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -583,7 +565,7 @@
                                     <img src="assets/img/Quitclaim.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://abdullahad123.github.io/QuitclaimFrontend/html/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text_light">QuitClaim Web App</p>
+                                            <p class="fs-4 my-1 text-white fw-medium">QuitClaim Web App</p>
                                             <i class='bx bx-right-arrow-alt' ></i>
                                         </a>
                                     </div>
@@ -595,23 +577,40 @@
             </div>
         </section>
 
-
-        <section id="contact" class="py-5">
-            <div class="container-lg">
+        <section id="contact" class="my-5 py-2">
+            <div class="container-lg wrapper">
                 <div id="contact_banner" class="p-lg-4 p-3">
                     <div class="row align-items-center h-100 pb-2">
                         <div class="col-lg-6 col-md-6 col-12 my-2">
-                            <h2 class="fw-medium text_light fs-1">Have a project in mind?</h2>
-                            <p class="text_light fs_5">Contact our dynamic team to have consultatin for your next project. Our team will guide your through it.</p>
-                            <div class="my-3">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="btn_blue fs-6 hover_shadow">                            
-                                    <span class="m-0 me-1">Get Started</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                </a>
-                            </div>
+                            <h2 class="fw-medium text-white fs-1">Have a project in mind?</h2>
+                            <p class="text-white-75 fw-light">Contact our dynamic team for a consultation on your next project. Fill out the form, and we’ll guide you through every step with expert advice and support.</p>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12 my-2 text-center">
-                            <img src="assets/img/contact.png" width="300" class="img-fluid" loading="lazy" alt="contact us">
+                        <div class="col-lg-6 col-md-6 col-12 my-2">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <div>
+                                    <div><input type="hidden" name="access_key" value="0d8d107b-71ca-4ed3-aae4-f84982814b9e"></div>
+                                </div>
+                                <div class="my-3">
+                                    <label for="name" class="form-label fw-medium text-white my-1">Name</label>
+                                    <input type="text" name="name" class="form-control form_input shadow-sm" id="name" required placeholder="Tony Stark">
+                                </div>
+                                <div class="my-3">
+                                    <label for="email" class="form-label fw-medium text-white my-1">Email Address</label>
+                                    <input type="email" name="email" class="form-control form_input shadow-sm" id="email" required placeholder="tonystark@xyz.com">
+                                </div>
+                                <div class="my-3">
+                                    <label for="message" class="form-label fw-medium text-white my-1">Message</label>
+                                    <textarea name="message" class="form-control form_input shadow-sm" id="message" rows="4" required placeholder="Drop your message here"></textarea>
+                                </div>
+                                <div class="my-2 text-end">
+                                    <button aria-label="send message" id="sendMessage" class="btn_invert_blue fs_6 hover_shadow">
+                                        <span>
+                                            Send Message
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
 
@@ -621,14 +620,23 @@
 
         <section id="footer" class="py-4">
             <div class="container-lg">
-                <p class="text-center fw-light my-2 fs_6 text-white-50">Copyright&nbsp;&copy; All rights reserved</p>
-                <div class="d-flex align-items-center justify-content-center gap-2 my-3">
-                    <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-whatsapp' ></i></a>
-                    <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-instagram' ></i></a>
-                    <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-upwork' ></i></a>
+                <div class="d-flex justify-content-between flex-wrap align-items-start my-2">
+                    <div>
+                        <p class="fw-medium text-white my-2">Follow us</p>
+                        <div class="d-flex align-items-center justify-content-center gap-2">
+                            <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-whatsapp' ></i></a>
+                            <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-facebook' ></i></a>
+                            <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#" aria-label="connect with us socially" class="text-decoration-none social_link"><i class='bx bxl-upwork' ></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="fw-medium text-white my-2">Mail us</p>
+                        <a href="#" class="fs_6 text_blue">business@ahtechnos.com</a>
+                    </div>
                 </div>
+                <p class="text-center fw-light my-2 fs_6 text-white-50">Copyright&nbsp;&copy; All rights reserved</p>
             </div>
         </section>
 

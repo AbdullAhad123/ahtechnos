@@ -1,34 +1,27 @@
-var xp = 0,
-  mouseX = 0;
-var yp = 0,
-  mouseY = 0;
-var xpDot = 0,
-  mouseX = 0;
-var ypDot = 0,
-  mouseY = 0;
-
-const cursorFollowerDot = document.querySelector(".cursorFollowerDot");
+const cursor = document.querySelector(".cursor");
 
 document.addEventListener("mousemove", (e) => {
-  mouseX = e.pageX;
-  mouseY = e.pageY;
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+  );
 });
 
-setInterval(function () {
-  xpDot += (mouseX - xpDot) / 25;
-  ypDot += (mouseY - ypDot) / 25;
-
-  cursorFollowerDot.style.left = xpDot + "px";
-  cursorFollowerDot.style.top = ypDot + "px";
-}, 1);
+document.addEventListener("click", (e) => {
+  cursor.classList.add("expand");
+  setTimeout(() => {
+    cursor.classList.remove("expand");
+  }, 500);
+});
 
 // Toggle hiddenCards visibility and change button text
 $("#seeMoreServices").click(function () {
   $(".hiddenCards").fadeToggle();
+  const text = $(this).find('span');
 
-  if ($(this).text() === "Load more") {
-    $(this).text("Load less");
+  if (text.text() === "Load more") {
+    text.text("Load less");
   } else {
-    $(this).text("Load more");
+    text.text("Load more");
   }
 });
