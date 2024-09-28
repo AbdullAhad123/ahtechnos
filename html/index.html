@@ -31,6 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -72,7 +73,7 @@
         <nav class="navbar navbar-expand-lg py-3">
             <div class="container-lg wrapper">
                 <a class="navbar-brand" href="index.html" aria-label="website logo">
-                    <img src="assets/img/ahtechnos_brand.png" width="auto" height="75" alt="AH Technos logo">
+                    <img src="assets/img/ahtechnos_brand.png" width="100" height="50" alt="AH Technos logo">
                 </a>
                 <div class="d-flex align-items-center gap-1">
                     <a aria-label="contact us on whatsapp" href="#contact" class="btn_blue fs_6 hover_shadow d-lg-none d-block">
@@ -110,10 +111,10 @@
                 <div id="hero" class="p-lg-5 p-4">
                     <div class="row align-items-center my-3 justify-content-center">
                         <div class="col-lg-7 col-md-6 col-12 my-2">
-                            <h1 class="my-2 text-white display-5 fw-medium user-select-none lh_lg">Transform your business with <span class="headerHighlights">AH Technos</span></h1>
-                            <p class="text-white-50 my-2">At AH TECHNOS, we turn your creative vision into reality using innovative technology and delivers innovative business solutions to help you stand out in today's modern world.</p>
-                            <div class="my-3">
-                                <a aria-label="services" href="#services" target="_blank" class="btn_invert_blue fs_6 hover_shadow">
+                            <h1 class="my-2 text-white display-5 fw-medium user-select-none lh_lg" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Transform your business with <span class="headerHighlights">AH Technos</span></h1>
+                            <p class="text-white-50 my-2" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">At AH TECHNOS, we turn your creative vision into reality using innovative technology and delivers innovative business solutions to help you stand out in today's modern world.</p>
+                            <div class="my-3" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
+                                <a aria-label="services" href="#services" class="btn_invert_blue fs_6 hover_shadow">
                                     <span>
                                         What we offers
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
@@ -122,7 +123,9 @@
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6 col-12 text-center my-2">
-                            <img src="assets/img/header_image.png" width="450" class="img-fluid" alt="header image">
+                            <div data-aos="fade-up" data-aos-delay="650" data-aos-duration="800">
+                                <img src="assets/img/header_image.png" width="450" class="img-fluid" alt="header image">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,21 +136,21 @@
             <div class="container-lg wrapper">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
-                        <div class="featuresCard">
+                        <div class="featuresCard" data-aos="flip-left" data-aos-delay="300" data-aos-duration="800">
                             <img src="assets/img/art-and-design.png" height="50" width="50" class="mb-2" alt="design">     
                             <p class="my-2 fs-5 text-white fw-medium">Design</p>
                             <p class="my-2 text-white-50">Transform your ideas into effective, user-friendly designs. We create visually appealing solutions that resonate with your audience.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
-                        <div class="featuresCard">
+                        <div class="featuresCard" data-aos="flip-left" data-aos-delay="500" data-aos-duration="800">
                             <img src="assets/img/code.png" height="50" width="50" class="mb-2" alt="develop">     
                             <p class="my-2 fs-5 text-white fw-medium">Develop</p>
                             <p class="my-2 text-white-50">Building reliable and scalable software. Our development process ensures your project performs efficiently and meets high standards.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
-                        <div class="featuresCard">
+                        <div class="featuresCard" data-aos="flip-left" data-aos-delay="700" data-aos-duration="800">
                             <img src="assets/img/rocket-ship.png" height="50" width="50" class="mb-2" alt="deploy">     
                             <p class="my-2 fs-5 text-white fw-medium">Deploy</p>
                             <p class="my-2 text-white-50">Launching your project smoothly and effectively. We handle all aspects of deployment, ensuring everything runs flawlessly from start to finish.</p>
@@ -159,7 +162,7 @@
 
         <section class="my-5 py-2">
             <div class="container-lg wrapper">
-                <div class="hireContainer p-md-5 p-4">
+                <div class="hireContainer p-md-5 p-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                     <div class="text-center col-lg-10 col-12 mx-auto my-4">
                         <h2 class="my-0 text-white">Ready to grow your business</h2>
                         <p class="text-white-75 my-2 fs-6">Our team of experts is dedicated to providing innovative solutions that drive your business forward. Contact us today to start taking your business to new heights.</p>
@@ -178,11 +181,11 @@
 
         <section id="services" class="my-5 py-2">
             <div class="container-lg wrapper">
-                <h2 class="fw-medium text-white fs-1 text-center">Our top-notch services</h2>
-                <p class="text-white-50 my-2 text-center">We provide top-notch, innovative services to help you excel and stand out in today’s competitive market. Discover our offerings and find the perfect fit for your needs.</p>
+                <h2 class="fw-medium text-white fs-1 text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Our top-notch services</h2>
+                <p class="text-white-50 my-2 text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">We provide top-notch, innovative services to help you excel and stand out in today’s competitive market. Discover our offerings and find the perfect fit for your needs.</p>
                 <div class="row m-0 mt-4">
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-4">
+                        <div class="service_card p-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                             <img src="assets/img/android.png" height="40" width="40" class="mb-2" alt="andriod icon">
                             <p class="fs-4 text-white fw-medium my-1">Android App Development</p>
                             <p class="text-white-75 fw-light my-2">Develop feature-rich Android apps for seamless and engaging user experiences.</p>
@@ -192,16 +195,10 @@
                                 <div class="stack_item">Java</div>
                                 <div class="stack_item">Firebase</div>
                             </div>
-                            <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
-                                    <span class="m-0">Get a quote</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-4">
+                        <div class="service_card p-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
                             <img src="assets/img/app-store.png" height="40" width="40" class="mb-2" alt="ios icon">
                             <p class="fs-4 text-white fw-medium my-1">iOS App Development</p>
                             <p class="text-white-75 fw-light my-2">Create high-performance iOS applications with a native and responsive feel.</p>
@@ -211,16 +208,10 @@
                                 <div class="stack_item">Firebase</div>
                                 <div class="stack_item">Xcode</div>
                             </div>
-                            <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
-                                    <span class="m-0">Get a quote</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-4">
+                        <div class="service_card p-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                             <img src="assets/img/responsive_deisgn.png" height="40" width="40" class="mb-2" alt="frontend development icon">
                             <p class="fs-4 text-white fw-medium my-1">Frontend Development</p>
                             <p class="text-white-75 fw-light my-2">Design and build responsive websites using modern and reliable technologies.</p>
@@ -234,16 +225,10 @@
                                 <div class="stack_item">jQuery</div>
                                 <div class="stack_item">React.js</div>
                             </div>
-                            <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
-                                    <span class="m-0">Get a quote</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-4">
+                        <div class="service_card p-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
                             <img src="assets/img/backend.png" height="40" width="40" class="mb-2" alt="backend development icon">
                             <p class="fs-4 text-white fw-medium my-1">Backend Development</p>
                             <p class="text-white-75 fw-light my-2">Build scalable backend systems with robust and efficient technologies.</p>
@@ -257,16 +242,10 @@
                                 <div class="stack_item">Laravel</div>
                                 <div class="stack_item">Firebase</div>
                             </div>
-                            <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
-                                    <span class="m-0">Get a quote</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-4">
+                        <div class="service_card p-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                             <img src="assets/img/graphics_design.png" height="40" width="40" class="mb-2" alt="graphics designing icon">
                             <p class="fs-4 text-white fw-medium my-1">Graphics Designing</p>
                             <p class="text-white-75 fw-light my-2">Integrate advanced AI-driven solutions to automate complex business tasks.</p>
@@ -276,16 +255,10 @@
                                 <div class="stack_item">Canva</div>
                                 <div class="stack_item">Illustrator</div>
                             </div>
-                            <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
-                                    <span class="m-0">Get a quote</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12 my-3">
-                        <div class="service_card p-4">
+                        <div class="service_card p-4" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
                             <img src="assets/img/jamstack_dev.png" height="40" width="40" class="mb-2" alt="jam stack icon">
                             <p class="fs-4 text-white fw-medium my-1">Jam Stack Development</p>
                             <p class="text-white-75 fw-light my-2">Develop fast, secure websites using modern and headless CMS technologies</p>
@@ -295,12 +268,6 @@
                                 <div class="stack_item">GraphQL</div>
                                 <div class="stack_item">Headless CMS</div>
                                 <div class="stack_item">FaunaDB</div>
-                            </div>
-                            <div class="mt-4 text-end">
-                                <a aria-label="contact us on whatsapp" href="mailto:business@ahtechnos.com" target="_blank" class="service_link">
-                                    <span class="m-0">Get a quote</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"></path></svg>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -312,11 +279,13 @@
             <div class="container-lg wrapper">
                 <div class="row align-items-center">
                     <div class="col-lg-7 col-md-6 col-12 my-2">
-                        <h2 class="fw-medium text-white fs-1">About us</h2>
-                        <p class="my-2 fs_5 fw-light text-white-75">We specialize in delivering cutting-edge web and app solutions that address the evolving needs of modern businesses. Our team of experts crafts innovative solutions tailored to your unique requirements, empowering your business to thrive in the digital landscape.</p>
+                        <h2 class="fw-medium text-white fs-1" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">About us</h2>
+                        <p class="my-2 fs_5 fw-light text-white-75" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">We specialize in delivering cutting-edge web and app solutions that address the evolving needs of modern businesses. Our team of experts crafts innovative solutions tailored to your unique requirements, empowering your business to thrive in the digital landscape.</p>
                     </div>
                     <div class="col-lg-5 col-md-6 col-12 my-2 text-center mx-auto">
-                        <img src="assets/img/about_us.png" loading="lazy" width="500" class="img-fluid" alt="about AH Technos">
+                        <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                            <img src="assets/img/about_us.png" loading="lazy" width="500" class="img-fluid" alt="about AH Technos">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -324,8 +293,8 @@
 
         <section id="portfolio" class="my-5">
             <div class="container-lg wrapper">
-                <h2 class="fw-medium text-white fs-1 text-center">Our Latest work</h2>
-                <p class="text-white-50 my-2 text-center">Explore our projects, crafted with dedication and passion, delivering exceptional results that exceed client expectations.</p>
+                <h2 class="fw-medium text-white fs-1 text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Our Latest work</h2>
+                <p class="text-white-50 my-2 text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Explore our projects, crafted with dedication and passion, delivering exceptional results that exceed client expectations.</p>
                 <ul class="d-flex align-items-center overflow-x-auto justify-content-center border-0 mt-4" id="portfolioOptions" role="tablist">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All</button>
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Apps</button>
@@ -335,7 +304,7 @@
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                         <div class="row justify-content-center">
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                                     <img src="assets/img/dalfa_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -350,7 +319,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                                     <img src="assets/img/B.A.B Digital (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.bab-media.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -361,7 +330,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
                                     <img src="assets/img/PCO.Link Portfolio post (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.pcolink.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -372,7 +341,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
                                     <img src="assets/img/frontpay_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -387,7 +356,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
                                     <img src="assets/img/Quitclaim.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://abdullahad123.github.io/QuitclaimFrontend/html/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -398,7 +367,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
                                     <img src="assets/img/areawide_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -413,7 +382,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
                                     <img src="assets/img/giveaway_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -428,7 +397,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
                                     <img src="assets/img/tutorselevenplus.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://tutorselevenplus.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -439,7 +408,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
                                     <img src="assets/img/Trolleymate.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://trolleymate.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -450,7 +419,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">  
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
                                     <img src="assets/img/Oneli-Builders.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://oneli.capitaltechnologies.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -465,7 +434,7 @@
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <div class="row m-0 justify-content-center">
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                                     <img src="assets/img/dalfa_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -480,7 +449,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                                     <img src="assets/img/frontpay_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -495,7 +464,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
                                     <img src="assets/img/areawide_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -510,7 +479,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
                                     <img src="assets/img/giveaway_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <div class="d-flex align-items-center justify-content-between w-100">
@@ -529,7 +498,7 @@
                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                         <div class="row m-0 justify-content-center">
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                                     <img src="assets/img/B.A.B Digital (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.bab-media.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -540,7 +509,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                                     <img src="assets/img/PCO.Link Portfolio post (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://www.pcolink.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -551,7 +520,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
                                     <img src="assets/img/tutorselevenplus.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://tutorselevenplus.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -562,7 +531,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
                                     <img src="assets/img/Trolleymate.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://trolleymate.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -573,7 +542,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">  
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
                                     <img src="assets/img/Oneli-Builders.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://oneli.capitaltechnologies.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -584,7 +553,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6 col-12 my-3">
-                                <div class="project_card">
+                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
                                     <img src="assets/img/Quitclaim.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
                                     <div class="projectDetails">
                                         <a aria-label="web project link" href="https://abdullahad123.github.io/QuitclaimFrontend/html/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
@@ -602,7 +571,7 @@
 
         <section id="contact" class="my-5 py-2">
             <div class="container-lg wrapper">
-                <div id="contact_banner" class="p-lg-4 p-3">
+                <div id="contact_banner" class="p-lg-4 p-3" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
                     <div class="row align-items-center h-100 pb-2">
                         <div class="col-lg-6 col-md-6 col-12 my-2">
                             <h2 class="fw-medium text-white fs-1">Have a project in mind?</h2>
@@ -670,6 +639,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
