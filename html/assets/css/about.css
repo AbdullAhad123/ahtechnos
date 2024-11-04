@@ -1,0 +1,131 @@
+.aboutHeader {
+    position: relative;
+}
+
+#hero {
+    min-height: 500px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center
+}
+
+.headerBackgroundImg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: blur(10px);
+    opacity: 0.5;
+    /* mix-blend-mode: ; */
+}
+
+/* about  */
+
+.aboutCard {
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutCardText  {
+    color: var(--body);
+}
+
+.card1 {
+    /* background: #F3F8FF; */
+    background: linear-gradient(45deg, #889bb6, #dfecff);
+}
+
+.card2 {
+    /* background: #F7F9F2; */
+    background: linear-gradient(45deg, #cad8a5, #F7F9F2);
+}
+
+.card3 {
+    /* background: #E9FFC2; */
+    background: linear-gradient(45deg, #9684a2, #e7c0ff);
+}
+
+.card4 {
+    /* background: #F8E8EE; */
+    background: linear-gradient(45deg, #b29ba4, #ffeaf2);
+}
+
+#sets_apart {
+    background: #3d1d984f;
+}
+
+._card {
+    background: #dad1ff !important;
+    border-radius: 20px;
+}
+
+#hireSection {
+    position: relative;
+}
+
+#hireSection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: #3d1d984f;
+    height: 50%;
+    width: 100%;
+    z-index: 0;
+}
+.hireContainer::after {
+    content: '';
+    position: absolute;
+    transform: rotate(228deg)
+}
+
+.hireContainer {
+    height: fit-content;
+    background: var(--dark_blue);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hireImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.hireContainer::after {
+    height: 60px;
+    width: 60px;
+    background: #211844;
+    top: -30px;
+    right: -40px
+}
+
+
+#contact_banner {
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    background: #6e3cff24;
+    position: relative
+}
+
+.form_input {
+    background: 0 0!important;
+    font-size: .9rem!important;
+    padding: .8rem!important;
+    color: #f8f8ff!important;
+    border: 1px solid #efefef78
+}
+
+.form_input:focus {
+    border: 1px solid var(--purple)
+}

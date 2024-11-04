@@ -1,0 +1,229 @@
+.aboutHeader {
+    position: relative;
+}
+
+#hero {
+    min-height: 500px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center
+}
+
+.headerBackgroundImg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    filter: blur(10px);
+    opacity: 0.5;
+    /* mix-blend-mode: ; */
+}
+
+.featuresCard {
+    height: 100%;
+    border: 1px solid #6d3cff7a;
+    padding: 1.5rem 1.2rem;
+    border-radius: 5px
+}
+
+.featuresCard::after {
+    content: '';
+    height: 30px;
+    width: 30px;
+    border-top: 1px solid #6d3cff7a;
+    background-color: var(--dark);
+    position: absolute;
+    top: -14px;
+    right: -17px;
+    transform: rotate(229deg)
+}
+
+
+#solutions {
+    height: fit-content;
+    width: 100%;
+    position: relative
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(10px);
+    mix-blend-mode: exclusion;
+    object-fit: cover
+}
+
+.solutionCard {
+    height: fit-content;
+    width: 100%;
+    background: var(--dark);
+    border-radius: 15px;
+    border: 1px solid var(--dark)
+}
+
+.solutionIcon {
+    height: 70px;
+    width: 70px;
+    border: 2px solid #ffffffbd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    fill: #ffffffbd;
+    transition: .3s
+}
+
+.solutionCard:hover .solutionIcon {
+    border-color: var(--purple);
+    fill: var(--purple)
+}
+
+.hireContainer::after {
+    content: '';
+    position: absolute;
+    transform: rotate(228deg)
+}
+
+.hireContainer {
+    height: fit-content;
+    background: var(--dark_blue);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hireImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover
+}
+
+.hireContainer::after {
+    height: 60px;
+    width: 60px;
+    background: #211844;
+    top: -30px;
+    right: -40px
+}
+
+
+#contact_banner {
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    background: #6e3cff24;
+    position: relative
+}
+
+.form_input {
+    background: 0 0 !important;
+    font-size: .9rem !important;
+    padding: .8rem !important;
+    color: #f8f8ff !important;
+    border: 1px solid #efefef78
+}
+
+.form_input:focus {
+    border: 1px solid var(--purple)
+}
+
+
+.project_card {
+    height: 320px;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+@media (max-width: 1200px) {
+    .project_card {
+        height: 290px;
+        width: auto
+    }
+}
+
+@media (max-width: 991px) {
+    .project_card {
+        height: 250px;
+        width: auto
+    }
+}
+
+@media (max-width: 769px) {
+    .project_card {
+        height: 300px;
+        width: auto
+    }
+}
+
+@media (max-width: 525px) {
+    .project_card {
+        height: 250px;
+        width: auto
+    }
+}
+
+@media (max-width: 425px) {
+    .project_card {
+        height: 210px;
+        width: auto
+    }
+}
+
+.projectDetails,
+.projectImage {
+    position: absolute;
+    height: 100%;
+    width: 100%
+}
+
+.projectImage {
+    object-fit: cover;
+    transition: transform .8s ease-in-out
+}
+
+.project_card:hover .projectDetails {
+    transform: translate(0)
+}
+
+.projectDetails {
+    background: linear-gradient(180deg, #00000000, #00000087);
+    display: flex;
+    align-items: end;
+    padding: .75rem;
+    transform: translateY(100%);
+    transition: transform .4s
+}
+
+.projectLinks {
+    transition: var(--trans)
+}
+
+.projectLinks {
+    font-size: 1.75rem;
+    color: #bdb8ca
+}
+
+.projectLinks:hover {
+    color: var(--yellow) !important
+}
+
+#portfolioOptions .nav-link {
+    padding: var(--btn_padding);
+    color: var(--light);
+    border-radius: 100px;
+    user-select: none;
+    border: 1px solid transparent
+}
+
+#portfolioOptions .nav-link.active {
+    color: var(--dark);
+    border: 1px solid #7e5eff;
+    background: #7e5eff
+}
