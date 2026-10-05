@@ -1,0 +1,60 @@
+/* ---------- SaaS products & pricing ---------- */
+.section_tag{display:inline-flex;align-items:center;gap:6px;font-size:.8rem;color:#b9a8ff;border:1px solid #6d3cff7a;background:#6e3cff1a;padding:.3rem .9rem;border-radius:100px}
+.hero_ctas{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.btn_outline{display:inline-flex;align-items:center;gap:.35em;text-decoration:none;color:#f8f8ff;border:1px solid #7e5eff;border-radius:.8em;padding:.6rem 1.2rem;font-size:var(--font_sm);transition:var(--trans)}
+.btn_outline:hover{background:#7e5eff;color:#fff}
+.saas_stats{display:flex;flex-wrap:wrap;gap:28px;margin-top:1.5rem}
+.saas_stats p{margin:0}
+.saas_stats .stat_value{color:#fff;font-size:1.5rem;font-weight:600}
+.saas_stats .stat_label{color:#ffffff80;font-size:.8rem}
+
+/* product cards */
+.product_card{height:100%;display:flex;flex-direction:column;border:1px solid #6d3cff7a;border-radius:12px;overflow:hidden;background:#ffffff05;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.product_card:hover{transform:translateY(-6px);border-color:var(--accent,#7e5eff);box-shadow:0 18px 40px -18px var(--accent,#7e5eff)}
+.product_thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0f1018}
+.product_thumb img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.product_card:hover .product_thumb img{transform:scale(1.05)}
+.product_badge{position:absolute;top:12px;left:12px;font-size:.72rem;font-weight:500;color:#fff;background:var(--accent,#7e5eff);padding:.2rem .7rem;border-radius:100px}
+.product_body{padding:1.25rem 1.25rem 1.4rem;display:flex;flex-direction:column;flex:1}
+.product_icon{height:42px;width:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--accent,#7e5eff);background:color-mix(in srgb,var(--accent,#7e5eff) 16%,transparent)}
+.product_features{list-style:none;padding:0;margin:.75rem 0 1.25rem}
+.product_features li{display:flex;align-items:flex-start;gap:8px;font-size:.88rem;color:#ffffffb3;margin:.35rem 0}
+.product_features li i{color:var(--accent,#7e5eff);font-size:1.05rem;margin-top:2px}
+.product_actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:10px}
+.product_actions .btn_blue,.product_actions .btn_outline{font-size:.85rem;padding:.55rem 1rem}
+
+/* detailed product rows (products page) */
+.product_row{border:1px solid #6d3cff4d;border-radius:16px;background:#ffffff05;padding:2rem}
+@media (max-width:575px){.product_row{padding:1.25rem}}
+.product_row .product_shot{border-radius:12px;overflow:hidden;border:1px solid #ffffff14;box-shadow:0 30px 60px -30px var(--accent,#7e5eff)}
+.product_row .product_shot img{width:100%;height:auto;display:block}
+.module_chips{display:flex;flex-wrap:wrap;gap:8px;margin:1rem 0}
+.module_chips span{font-size:.78rem;color:var(--accent,#7e5eff);border:1px solid var(--accent,#7e5eff);padding:.3rem .8rem;border-radius:100px}
+
+/* pricing */
+.billing_toggle{display:inline-flex;align-items:center;gap:4px;padding:4px;border:1px solid #6d3cff7a;border-radius:100px;background:#ffffff08}
+.billing_toggle button{border:0;background:transparent;color:#ffffffb3;font-size:.85rem;padding:.45rem 1.1rem;border-radius:100px;transition:var(--trans)}
+.billing_toggle button.active{background:linear-gradient(to right,#8e2de2,#4a00e0);color:#fff}
+.billing_toggle .save_pill{font-size:.68rem;background:var(--yellow);color:#000;padding:.1rem .45rem;border-radius:100px;margin-left:4px}
+.pricing_card{height:100%;position:relative;display:flex;flex-direction:column;border:1px solid #6d3cff7a;border-radius:16px;padding:2rem 1.6rem;background:#ffffff05;transition:transform .3s ease}
+.pricing_card:hover{transform:translateY(-6px)}
+.pricing_card.featured{background:linear-gradient(160deg,#6e3cff40,#15161e 70%);border-color:#7e5eff;box-shadow:0 25px 60px -25px #7e5eff}
+.popular_tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--yellow);color:#000;font-size:.75rem;font-weight:600;padding:.25rem .9rem;border-radius:100px;white-space:nowrap}
+.plan_price{display:flex;align-items:flex-end;gap:4px;margin:1rem 0 .25rem}
+.plan_price .amount{font-size:2.6rem;font-weight:700;color:#fff;line-height:1}
+.plan_price .period{color:#ffffff80;font-size:.85rem;margin-bottom:.35rem}
+.plan_note{font-size:.78rem;color:#ffffff66;min-height:1.2em}
+.plan_features{list-style:none;padding:0;margin:1.25rem 0 1.75rem}
+.plan_features li{display:flex;align-items:flex-start;gap:8px;font-size:.88rem;color:#ffffffc0;margin:.55rem 0}
+.plan_features li i{color:#7e5eff;font-size:1.1rem;margin-top:1px}
+.plan_features li.off{color:#ffffff4d}
+.plan_features li.off i{color:#ffffff4d}
+.pricing_card .plan_cta{margin-top:auto;width:100%}
+.pricing_card .plan_cta.btn_blue,.pricing_card .plan_cta.btn_outline{justify-content:center}
+
+/* faq */
+.saas_faq .accordion-item{background:transparent;border:1px solid #6d3cff4d;border-radius:12px!important;margin-bottom:12px;overflow:hidden}
+.saas_faq .accordion-button{background:#ffffff05;color:#fff;font-size:.95rem;box-shadow:none}
+.saas_faq .accordion-button:not(.collapsed){background:#6e3cff24;color:#fff}
+.saas_faq .accordion-button::after{filter:invert(1)}
+.saas_faq .accordion-body{color:#ffffffa6;font-size:.9rem}
