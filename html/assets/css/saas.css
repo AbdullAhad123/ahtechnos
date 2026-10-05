@@ -58,3 +58,82 @@
 .saas_faq .accordion-button:not(.collapsed){background:#6e3cff24;color:#fff}
 .saas_faq .accordion-button::after{filter:invert(1)}
 .saas_faq .accordion-body{color:#ffffffa6;font-size:.9rem}
+
+/* ---------- visual polish ---------- */
+.grad_text{background:linear-gradient(90deg,#b79cff 0%,#7e5eff 45%,#e879f9 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* brighter primary button: gradient visible by default, dark sweep on hover */
+.btn_blue.btn_primary{box-shadow:0 10px 30px -10px #8e2de2}
+.btn_blue.btn_primary::before{transform:translate3d(-110%,0,0) skew(30deg)}
+.btn_blue.btn_primary:hover::before{transform:translate3d(0,0,0) skew(30deg)}
+
+/* glass sticky navbar (overflow clip keeps sticky working, hidden breaks it) */
+body,#mainWrapper{overflow-x:clip}
+#mainWrapper>.navbar{position:sticky;top:0;z-index:1000;transition:background .3s ease,box-shadow .3s ease,padding .3s ease}
+#mainWrapper>.navbar.scrolled{background:#15161ecc;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 #ffffff12;padding-top:.6rem!important;padding-bottom:.6rem!important}
+
+/* hero */
+.saas_hero{position:relative;padding:4rem 0 5rem;overflow:hidden}
+.saas_hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(ellipse at 50% 30%,#000 30%,transparent 75%)}
+.hero_glow{position:absolute;border-radius:50%;filter:blur(90px);pointer-events:none}
+.hero_glow_1{width:520px;height:520px;background:#6e3cff;opacity:.35;top:-160px;left:-120px}
+.hero_glow_2{width:480px;height:480px;background:#c026d3;opacity:.22;bottom:-200px;right:-80px}
+.hero_title{color:#fff;font-weight:600;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.15;letter-spacing:-.02em}
+.hero_lead{color:#ffffffa6;font-size:1.05rem;line-height:1.75;max-width:560px}
+.live_dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 #22c55e99;animation:livePulse 1.8s infinite}
+@keyframes livePulse{0%{box-shadow:0 0 0 0 #22c55e99}70%{box-shadow:0 0 0 8px #22c55e00}100%{box-shadow:0 0 0 0 #22c55e00}}
+.hero_trust{display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.trust_google{display:inline-flex;align-items:center;gap:10px;text-decoration:none;background:#ffffff0d;border:1px solid #ffffff1a;border-radius:12px;padding:.5rem .9rem;transition:var(--trans)}
+.trust_google:hover{background:#ffffff17}
+.trust_google span{display:flex;flex-wrap:wrap;align-items:center;gap:1px;color:#fff;font-size:.9rem;line-height:1.2;max-width:120px}
+.trust_google b{margin-right:4px}
+.trust_google i{color:#fbbf24;font-size:.85rem}
+.trust_google small{width:100%;color:#ffffff80;font-size:.72rem}
+.trust_points{display:flex;flex-wrap:wrap;gap:14px}
+.trust_points span{display:inline-flex;align-items:center;gap:6px;color:#ffffffa6;font-size:.82rem}
+.trust_points i{color:#b79cff;font-size:1.1rem}
+
+/* screenshot collage */
+.hero_stack{position:relative;height:440px}
+.shot_frame{position:absolute;width:78%;border-radius:12px;overflow:hidden;background:#1f2030;border:1px solid #ffffff1f;box-shadow:0 30px 70px -20px #000000cc}
+.shot_frame img{display:block;width:100%;height:auto}
+.shot_bar{display:flex;align-items:center;gap:5px;height:26px;padding:0 10px;background:#1f2030}
+.shot_bar i{width:8px;height:8px;border-radius:50%;background:#ff5f57}
+.shot_bar i:nth-child(2){background:#febc2e}
+.shot_bar i:nth-child(3){background:#28c840}
+.shot_bar span{margin-left:10px;font-size:.68rem;color:#ffffff80}
+.shot_back{top:0;right:0;opacity:.75;transform:rotate(3deg);animation:floatY 7s ease-in-out infinite}
+.shot_mid{top:90px;left:4%;opacity:.9;transform:rotate(-3deg);animation:floatY 8s ease-in-out infinite reverse}
+.shot_front{bottom:0;right:6%;box-shadow:0 40px 80px -20px #6e3cffaa;animation:floatY 6s ease-in-out infinite}
+@keyframes floatY{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.float_chip{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;background:#1b1c29ee;backdrop-filter:blur(10px);border:1px solid #ffffff1f;border-radius:12px;padding:.55rem .85rem;box-shadow:0 18px 40px -15px #000;animation:floatY 5s ease-in-out infinite}
+.float_chip i{font-size:1.3rem;color:#b79cff;background:#6e3cff2e;border-radius:8px;padding:6px}
+.float_chip span{display:flex;flex-direction:column;line-height:1.2}
+.float_chip b{color:#fff;font-size:.85rem}
+.float_chip small{color:#ffffff80;font-size:.7rem}
+.chip_a{top:40px;left:-10px}
+.chip_b{bottom:30px;left:0;animation-delay:-2s}
+@media (max-width:991px){.hero_stack{height:400px;margin-top:1rem}}
+@media (max-width:575px){.saas_hero{padding:2rem 0 3rem}.hero_stack{height:270px}.shot_frame{width:86%}.shot_mid{top:60px}.float_chip{display:none}}
+@media (prefers-reduced-motion:reduce){.shot_frame,.float_chip,.marquee_track,.live_dot{animation:none!important}}
+
+/* product marquee */
+.product_marquee{position:relative;overflow:hidden;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12;background:#ffffff05;padding:1rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee_track{display:flex;width:max-content;gap:3rem;animation:marquee 32s linear infinite}
+.marquee_track span{display:inline-flex;align-items:center;gap:.6rem;color:#ffffff99;font-size:1rem;font-weight:500;white-space:nowrap}
+.marquee_track i{font-size:1.35rem;color:#b79cff}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* how it works */
+.steps_row{position:relative}
+.step_card{position:relative;height:100%;padding:2rem 1.6rem;border-radius:16px;border:1px solid #6d3cff4d;background:linear-gradient(180deg,#6e3cff14,#ffffff03);overflow:hidden;transition:transform .3s ease,border-color .3s ease}
+.step_card:hover{transform:translateY(-6px);border-color:#7e5eff}
+.step_num{position:absolute;top:.6rem;right:1.2rem;font-size:3.6rem;font-weight:700;line-height:1;color:transparent;-webkit-text-stroke:1px #7e5eff55}
+.step_icon{height:52px;width:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:#fff;background:linear-gradient(135deg,#8e2de2,#4a00e0);box-shadow:0 12px 30px -10px #8e2de2}
+
+/* existing blocks: subtle glow on hover */
+.featuresCard,.service_card{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.featuresCard:hover{transform:translateY(-6px);border-color:#7e5eff;box-shadow:0 20px 40px -20px #7e5eff}
+.hireContainer{background:linear-gradient(120deg,#4a00e0,#8e2de2 55%,#c026d3)}
+.hireContainer .hireImage{mix-blend-mode:soft-light;opacity:.6}
+#contact_banner{background:linear-gradient(140deg,#6e3cff33,#15161e 70%);border:1px solid #6d3cff4d}

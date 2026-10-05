@@ -38,3 +38,11 @@ document.querySelectorAll(".billing_toggle").forEach(function (toggle) {
         });
     });
 });
+
+// Glass navbar once the page is scrolled
+const navbar = document.querySelector("#mainWrapper > .navbar");
+if (navbar) {
+    const onScroll = function () { navbar.classList.toggle("scrolled", window.scrollY > 20); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+}
