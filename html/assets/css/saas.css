@@ -137,3 +137,100 @@ body,#mainWrapper{overflow-x:clip}
 .hireContainer{background:linear-gradient(120deg,#4a00e0,#8e2de2 55%,#c026d3)}
 .hireContainer .hireImage{mix-blend-mode:soft-light;opacity:.6}
 #contact_banner{background:linear-gradient(140deg,#6e3cff33,#15161e 70%);border:1px solid #6d3cff4d}
+
+/* ---------- site-wide theme (all pages) ---------- */
+/* inner page heroes */
+.page_hero{position:relative;overflow:hidden;padding:1rem 0 2rem}
+.page_hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 40%,#000 25%,transparent 70%);mask-image:radial-gradient(ellipse at 50% 40%,#000 25%,transparent 70%)}
+.page_hero #hero{min-height:420px;background:transparent}
+.page_hero #hero::after{display:none}
+.page_hero .page_title{font-weight:600!important;letter-spacing:-.02em;font-size:clamp(2.1rem,4.4vw,3.4rem)!important;line-height:1.15}
+.section_tag a{color:#b9a8ff;text-decoration:none}
+.section_tag a:hover{color:#fff}
+.section_tag .bx-chevron-right{opacity:.6}
+
+/* section headings get a little accent line */
+section h2.fs-1.text-center::after{content:"";display:block;width:56px;height:3px;margin:14px auto 0;border-radius:3px;background:linear-gradient(90deg,#8e2de2,#e879f9)}
+section .text-center h2.fs-1::after{content:"";display:block;width:56px;height:3px;margin:14px auto 0;border-radius:3px;background:linear-gradient(90deg,#8e2de2,#e879f9)}
+
+/* cards */
+.featuresCard,.service_card{border-radius:14px;background:linear-gradient(180deg,#6e3cff12,#ffffff03)}
+.featuresCard::after,.service_card::after{display:none}
+.service_card:hover{transform:translateY(-6px);border-color:#7e5eff;box-shadow:0 20px 40px -20px #7e5eff}
+.solutionCard{border:1px solid #ffffff14;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.solutionCard:hover{transform:translateY(-6px);border-color:#8e2de2;box-shadow:0 18px 40px -20px #8e2de2}
+
+/* portfolio */
+#portfolioOptions{gap:6px;padding:5px;width:max-content;max-width:100%;margin-left:auto;margin-right:auto;border:1px solid #6d3cff4d;border-radius:100px;background:#ffffff06}
+#portfolioOptions .nav-link.active{background:linear-gradient(90deg,#8e2de2,#4a00e0);border-color:transparent;color:#fff}
+.project_card{border-radius:14px;border:1px solid #ffffff14;transition:transform .3s ease,box-shadow .3s ease}
+.project_card::after{display:none}
+.project_card:hover{transform:translateY(-6px);box-shadow:0 25px 50px -25px #7e5eff}
+.project_card:hover .projectImage{transform:scale(1.06)}
+.projectDetails{background:linear-gradient(180deg,#00000000 40%,#0b0b14e6)}
+@media (hover:none){.projectDetails{transform:none}}
+
+/* hire / CTA banners */
+.hireContainer{border-radius:18px}
+.hireContainer::after{display:none}
+
+/* contact banner + forms */
+#contact_banner{border-radius:18px}
+#contact_banner::after{display:none}
+.form_input{border-radius:10px!important;background:#ffffff08!important;border:1px solid #ffffff24!important;transition:border-color .2s ease,box-shadow .2s ease}
+.form_input:focus{border-color:#8e2de2!important;box-shadow:0 0 0 4px #8e2de233!important}
+
+/* footer */
+#footer{position:relative;background:linear-gradient(180deg,#15161e,#0f0f17)}
+#footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#8e2de2,#e879f9,transparent)}
+#footer hr{opacity:.08}
+.footer_link{display:inline-block;transition:color .3s ease,transform .3s ease}
+.footer_link:hover{color:#c4b5fd;transform:translateX(4px)}
+.social_link:hover{background:linear-gradient(135deg,#8e2de2,#4a00e0);border-color:transparent;transform:translateY(-3px)}
+.social_link{transition:all .3s ease}
+
+/* back to top */
+.btn_back_to_top{border-radius:12px;background:#15161ecc;backdrop-filter:blur(8px)}
+.saas_hero,.page_hero{-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent);mask-image:linear-gradient(180deg,#000 82%,transparent)}
+
+/* about: stat cards as dark glass with gradient numbers */
+.aboutCard{position:relative;overflow:hidden;background:linear-gradient(160deg,#6e3cff26,#ffffff05)!important;border:1px solid #6d3cff4d;color:#ffffffb3;transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.aboutCard::before{content:"";position:absolute;width:180px;height:180px;border-radius:50%;filter:blur(60px);opacity:.35;top:-60px;right:-60px;background:#8e2de2}
+.aboutCard.card2::before{background:#22c3a6}
+.aboutCard.card3::before{background:#e879f9}
+.aboutCard.card4::before{background:#4f8cff}
+.aboutCard>div{position:relative}
+.aboutCard:hover{transform:translateY(-6px);border-color:#7e5eff;box-shadow:0 20px 40px -20px #7e5eff}
+.aboutCard .aboutCardText{font-weight:700!important;background:linear-gradient(90deg,#fff,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* about: vision / mission */
+#sets_apart{background:linear-gradient(180deg,#6e3cff1f,transparent)!important}
+._card{background:linear-gradient(160deg,#6e3cff26,#ffffff05)!important;border:1px solid #6d3cff4d;color:#ffffffb3!important;transition:transform .3s ease,border-color .3s ease}
+._card:hover{transform:translateY(-6px);border-color:#7e5eff}
+._card *{color:inherit}
+._card h3,._card .fs-4,._card p.fw-medium{color:#fff!important}
+._card svg,._card img{filter:invert(1) brightness(1.4);opacity:.9}
+#hireSection::after{background:linear-gradient(180deg,#6e3cff14,transparent)!important}
+
+/* invert buttons (forms etc.) visible on dark backgrounds; stay dark on the gradient banner */
+.btn_invert_blue{box-shadow:0 10px 30px -10px #8e2de2}
+.btn_invert_blue::before{transform:translate3d(-110%,0,0) skew(30deg)}
+.btn_invert_blue:hover::before{transform:translate3d(0,0,0) skew(30deg)}
+.hireContainer .btn_invert_blue{box-shadow:none}
+.hireContainer .btn_invert_blue::before{transform:skew(30deg)}
+.hireContainer .btn_invert_blue:hover::before{transform:translate3d(100%,0,0)}
+
+/* portfolio card base (services/solutions pages don't load style.css, so the cards had no size or positioning) */
+.project_card{position:relative;width:auto;height:320px;overflow:hidden}
+@media (max-width:1200px){.project_card{height:290px}}
+@media (max-width:991px){.project_card{height:250px}}
+@media (max-width:769px){.project_card{height:300px}}
+@media (max-width:525px){.project_card{height:250px}}
+@media (max-width:425px){.project_card{height:210px}}
+.projectImage,.projectDetails{position:absolute;inset:0;height:100%;width:100%}
+.projectImage{object-fit:cover;transition:transform .8s ease-in-out}
+.projectDetails{display:flex;align-items:end;padding:.75rem;transform:translateY(100%);transition:transform .4s}
+.project_card:hover .projectDetails{transform:translate(0)}
+.projectLinks{font-size:1.75rem;color:#bdb8ca;transition:var(--trans)}
+.projectLinks:hover{color:var(--yellow)!important}
+#portfolioOptions .nav-link{padding:var(--btn_padding);color:var(--light);border-radius:100px;user-select:none;border:1px solid transparent}

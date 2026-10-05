@@ -45,6 +45,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/solutions.css">
+    <link rel="stylesheet" href="assets/css/saas.css">
 
     <!-- Google Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -74,55 +75,57 @@
   
     <div id="mainWrapper">
 
-        <div class="aboutHeader">
-            <section class="z-1 position-relative">
-                <nav class="navbar navbar-expand-lg py-3">
-                    <div class="container-lg wrapper">
-                        <a class="navbar-brand" href="index.html" aria-label="website logo">
-                            <img src="assets/img/ahtechnos_brand.png" width="100" height="50" alt="AH Technos logo">
-                        </a>
-                        <div class="d-flex align-items-center gap-1">
-                            <a aria-label="contact us on whatsapp" href="#contact" class="btn_blue fs_6 hover_shadow d-lg-none d-block">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-lg wrapper">
+                <a class="navbar-brand" href="index.html" aria-label="website logo">
+                    <img src="assets/img/ahtechnos_brand.png" width="100" height="50" alt="AH Technos logo">
+                </a>
+                <div class="d-flex align-items-center gap-1">
+                    <a aria-label="contact us on whatsapp" href="#contact" class="btn_blue fs_6 hover_shadow d-lg-none d-block">
+                        <span>
+                            Contact
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
+                        </span>
+                    </a>
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="22" height="22" fill="var(--light)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav my-lg-0 my-3 align-items-lg-center">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="services.html">Services</a>
+                        <a class="nav-link" href="solutions.html">Solutions</a>
+                        <a class="nav-link" href="products.html">Products</a>
+                        <a class="nav-link" href="products.html#pricing">Pricing</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="contact.html">
+                            <button aria-label="contact us on whatsapp" class="btn_blue fs_6 hover_shadow d-lg-block d-none">
                                 <span>
                                     Contact
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
                                 </span>
-                            </a>
-                            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="22" height="22" fill="var(--light)"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
                             </button>
-                        </div>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                            <div class="navbar-nav my-lg-0 my-3 align-items-lg-center">
-                                <a class="nav-link" href="index.html">Home</a>
-                                <a class="nav-link" href="about.html">About</a>
-                                <a class="nav-link" href="services.html">Services</a>
-                                <a class="nav-link" href="solutions.html">Solutions</a>
-                                <a class="nav-link" href="products.html">Products</a>
-                                <a class="nav-link" href="products.html#pricing">Pricing</a>
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                <a class="nav-link" href="contact.html">
-                                    <button aria-label="contact us on whatsapp" class="btn_blue fs_6 hover_shadow d-lg-block d-none">
-                                        <span>
-                                            Contact
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
-                                        </span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-                </nav>
+                </div>
+            </div>
+        </nav>
+
+        <div class="aboutHeader page_hero">
+            <section class="z-1 position-relative">
         
                 <header class="py-2">
                     <div class="container-lg wrapper">
                         <div id="hero" class="p-lg-5 p-4">
                             <div class="text-center col-lg-9 col-md-10 col-12 mb-4 mx-auto">
-                                <h1 class="my-2 text-white display-5 fw-medium" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Our cutting-edge & top-tier solutions</h1>
+                                <span class="section_tag mb-2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800"><a href="index.html">Home</a><i class="bx bx-chevron-right"></i><i class="bx bx-bulb"></i> Solutions</span>
+                                <h1 class="page_title my-3 text-white display-5 fw-medium" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">Our cutting-edge & <span class="grad_text">top-tier solutions</span></h1>
                                 <p class="text-white-50 fs_5 my-2" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">Our expert team offers a wide range of innovative and top-notch software solutions, ensure excellence and efficiency in every project we delivers.</p>
                                 <div class="my-3" data-aos="fade-right" data-aos-delay="600" data-aos-duration="800">
-                                    <a aria-label="solutions" href="#solutions" class="btn_invert_blue fs_6 hover_shadow">
+                                    <a aria-label="solutions" href="#solutions" class="btn_blue btn_primary fs_6 hover_shadow">
                                         <span>
                                             Explore Solutions
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z"/></svg>
@@ -134,7 +137,8 @@
                     </div>
                 </header>
             </section>
-            <img src="assets/img/solutions_bg.jpg" width="100%" height="100%" alt="" class="headerBackgroundImg">
+            <div class="hero_glow hero_glow_1"></div>
+            <div class="hero_glow hero_glow_2"></div>
         </div>
 
         <section class="my-5 py-2">
@@ -638,6 +642,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/saas.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
         AOS.init();
