@@ -46,6 +46,7 @@
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/saas.css">
+    <link rel="stylesheet" href="assets/css/portfolio-showcase.css">
 
     <!-- Google Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -493,254 +494,174 @@
         <section id="portfolio" class="my-5">
             <div class="container-lg wrapper">
                 <h2 class="fw-medium text-white fs-1 text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Our Amazing Creations</h2>
-                <p class="text-white-50 my-2 text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Explore our projects, crafted with dedication and passion, delivering exceptional results that exceed client expectations.</p>
-                <ul class="d-flex align-items-center overflow-x-auto justify-content-center border-0 mt-4" id="portfolioOptions" role="tablist">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All</button>
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Apps</button>
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Websites</button>
-                </ul>
-                <div class="tab-content mb-3" id="portfolioOptionsContent">
-                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <div class="row justify-content-center">
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                                    <img src="assets/img/dalfa_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Dalfa Pak</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a aria-label="google play link" href="https://play.google.com/store/apps/details?id=com.dalfa&pcampaignid=web_share" class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                <p class="text-white-50 my-2 text-center col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Explore our projects, crafted with dedication and passion, delivering exceptional results that exceed client expectations. Tap any project to see the full story.</p>
+                <div class="pf_filters" role="group" aria-label="Filter projects">
+                    <button type="button" class="pf_filter active" data-filter="all" aria-pressed="true">All <span class="pf_count">9</span></button>
+                    <button type="button" class="pf_filter" data-filter="app" aria-pressed="false"><i class="bx bx-mobile-alt"></i> Apps <span class="pf_count">4</span></button>
+                    <button type="button" class="pf_filter" data-filter="web" aria-pressed="false"><i class="bx bx-globe"></i> Websites <span class="pf_count">5</span></button>
+                </div>
+                <div class="row g-4 justify-content-center mt-1 mb-3">
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="app">
+                        <article class="pf_card" data-project="dalfa" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of Dalfa Pak" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/dalfa_app.jpg" alt="Dalfa Pak project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-mobile-alt"></i> Mobile App</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Livestock &amp; Agritech</span>
+                                <h3 class="pf_title">Dalfa Pak</h3>
+                                <p class="pf_desc">A livestock marketplace app for Pakistan&#x27;s cattle industry, with animal listings, live auctions and cattle show updates.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Android &amp; iOS</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-                                    <img src="assets/img/PCO.Link Portfolio post (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://www.pcolink.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">PCO Portfolio Website</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-                                    <img src="assets/img/frontpay_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Frontpay</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.frontpay.dashboard" class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
-                                    <img src="assets/img/Quitclaim.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://abdullahad123.github.io/QuitclaimFrontend/html/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">QuitClaim Web App</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
-                                    <img src="assets/img/areawide_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Areawide Waterproofing</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a href="#" aria-label="application project link        " class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
-                                    <img src="assets/img/giveaway_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Giveaway E-commerce</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.app.giveaway" class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800">
-                                    <img src="assets/img/tutorselevenplus.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://tutorselevenplus.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">TutorsElevenPlus</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
-                                    <img src="assets/img/Trolleymate.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://trolleymate.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">Trolleymate</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">  
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
-                                    <img src="assets/img/Oneli-Builders.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://oneli.capitaltechnologies.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">Oneli Builders</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                        <div class="row m-0 justify-content-center">
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                                    <img src="assets/img/dalfa_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Dalfa Pak</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a href="https://play.google.com/store/apps/details?id=com.dalfa&pcampaignid=web_share" aria-label="application project link" class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="web">
+                        <article class="pf_card" data-project="pcolink" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of PCO Link" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/PCO.Link Portfolio post (1).jpg" alt="PCO Link project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-globe"></i> Website</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Automotive &amp; Car Hire</span>
+                                <h3 class="pf_title">PCO Link</h3>
+                                <p class="pf_desc">A website for a London PCO car hire company that rents Uber-ready vehicles to private hire and rideshare drivers.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Responsive Website</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                                    <img src="assets/img/frontpay_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Frontpay</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.frontpay.dashboard" class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-                                    <img src="assets/img/areawide_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Areawide Waterproofing</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a href="#" aria-label="application project link        " class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-                                    <img src="assets/img/giveaway_app.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <div class="d-flex align-items-center justify-content-between w-100">
-                                            <p class="fs-4 my-1 text-white fw-medium">Giveaway E-commerce</p>
-                                            <div class="d-flex align-items-center gap-1 my-1">
-                                                <a aria-label="application porject link" href="https://play.google.com/store/apps/details?id=com.app.giveaway" class="projectLinks" target="_blank">
-                                                    <i class="bx bxl-play-store"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </article>
                     </div>
-                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                        <div class="row m-0 justify-content-center">
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                                    <img src="assets/img/PCO.Link Portfolio post (1).jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://www.pcolink.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">PCO Portfolio Website</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="app">
+                        <article class="pf_card" data-project="frontpay" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of FrontPay" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/frontpay_app.jpg" alt="FrontPay project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-mobile-alt"></i> Mobile App</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Fintech &amp; Payments</span>
+                                <h3 class="pf_title">FrontPay</h3>
+                                <p class="pf_desc">A payments app for Pakistan that lets people and businesses send, request and collect money with a phone number or email.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Android &amp; iOS</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-                                    <img src="assets/img/tutorselevenplus.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://tutorselevenplus.com/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">TutorsElevenPlus</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="web">
+                        <article class="pf_card" data-project="quitclaim" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of QuitClaim Web App" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/Quitclaim.jpg" alt="QuitClaim Web App project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-globe"></i> Website</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Real Estate</span>
+                                <h3 class="pf_title">QuitClaim Web App</h3>
+                                <p class="pf_desc">A real estate platform that connects property owners who need a quick transfer with investors, built around quitclaim deeds.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Web Application</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800">
-                                    <img src="assets/img/Trolleymate.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://trolleymate.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">Trolleymate</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="app">
+                        <article class="pf_card" data-project="areawide" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of Areawide Waterproofing" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/areawide_app.jpg" alt="Areawide Waterproofing project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-mobile-alt"></i> Mobile App</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Construction &amp; Home Services</span>
+                                <h3 class="pf_title">Areawide Waterproofing</h3>
+                                <p class="pf_desc">A referral partner app for a waterproofing company, used to submit new leads and track earnings and closed deals.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Android &amp; iOS</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 my-3">  
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
-                                    <img src="assets/img/Oneli-Builders.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://oneli.capitaltechnologies.co.uk/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">Oneli Builders</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="app">
+                        <article class="pf_card" data-project="giveaway" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of Giveaway Marketplace" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/giveaway_app.jpg" alt="Giveaway Marketplace project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-mobile-alt"></i> Mobile App</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">E-commerce</span>
+                                <h3 class="pf_title">Giveaway Marketplace</h3>
+                                <p class="pf_desc">A marketplace app where people and businesses list free item giveaways, promotions and contests for users to enter.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Android</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 my-3">
-                                <div class="project_card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
-                                    <img src="assets/img/Quitclaim.jpg" alt="project thumbnail" loading="lazy" class="projectImage">
-                                    <div class="projectDetails">
-                                        <a aria-label="web project link" href="https://abdullahad123.github.io/QuitclaimFrontend/html/" class="projectLinks d-flex align-items-center justify-content-between w-100 text-decoration-none" target="_blank">
-                                            <p class="fs-4 my-1 text-white fw-medium">QuitClaim Web App</p>
-                                            <i class='bx bx-right-arrow-alt' ></i>
-                                        </a>
-                                    </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="web">
+                        <article class="pf_card" data-project="tutors" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of TutorsElevenPlus" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/tutorselevenplus.jpg" alt="TutorsElevenPlus project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-globe"></i> Website</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Education</span>
+                                <h3 class="pf_title">TutorsElevenPlus</h3>
+                                <p class="pf_desc">An online learning platform that prepares UK students for 11+ entrance exams with lessons, practice papers and live tests.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Web Platform</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
                                 </div>
                             </div>
-                        </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="web">
+                        <article class="pf_card" data-project="trolleymate" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of TrolleyMate" data-aos="fade-up" data-aos-delay="250" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/Trolleymate.jpg" alt="TrolleyMate project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-globe"></i> Website</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Grocery &amp; Delivery</span>
+                                <h3 class="pf_title">TrolleyMate</h3>
+                                <p class="pf_desc">A same-day grocery delivery website that helps UK shoppers find the best local stores and order to their door.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Responsive Website</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 pf_item" data-category="web">
+                        <article class="pf_card" data-project="oneli" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details of Oneli Builders" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                            <div class="pf_thumb">
+                                <img src="assets/img/Oneli-Builders.jpg" alt="Oneli Builders project preview" loading="lazy">
+                                <span class="pf_badge"><i class="bx bx-globe"></i> Website</span>
+                                <div class="pf_view"><span><i class="bx bx-show"></i> View details</span></div>
+                            </div>
+                            <div class="pf_body">
+                                <span class="pf_industry">Construction</span>
+                                <h3 class="pf_title">Oneli Builders</h3>
+                                <p class="pf_desc">An elegant website for a construction firm in London and Kent that turns dream homes into reality.</p>
+                                <div class="pf_footer">
+                                    <span class="pf_platform"><i class="bx bx-devices"></i> Responsive Website</span>
+                                    <span class="pf_more">Details <i class="bx bx-right-arrow-alt"></i></span>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -863,6 +784,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/saas.js"></script>
+    <script src="assets/js/portfolio-showcase.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
         AOS.init();

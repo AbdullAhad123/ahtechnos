@@ -1,0 +1,44 @@
+name: Deploy to FTP
+
+# Runs on every push to the Ayan branch, and can also be started by hand
+# from the Actions tab on GitHub.
+on:
+  push:
+    branches:
+      - Ayan
+  workflow_dispatch:
+
+# Never run two deploys at the same time. A newer push waits for the older one.
+concurrency:
+  group: ftp-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Upload website to FTP
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Get the latest code
+        uses: actions/checkout@v4
+
+      - name: Upload changed files to the server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          # Set these in GitHub: Settings > Secrets and variables > Actions
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Optional secrets with sensible defaults
+          port: ${{ secrets.FTP_PORT || 21 }}
+          protocol: ${{ secrets.FTP_PROTOCOL || 'ftp' }}
+          # Only the website folder is uploaded
+          local-dir: ./html/
+          # Folder on the server where the site lives. It must end with a slash.
+          server-dir: ${{ secrets.FTP_SERVER_DIR || './public_html/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.DS_Store
+            **/.vscode/**
