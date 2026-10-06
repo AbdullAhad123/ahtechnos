@@ -33,10 +33,14 @@ jobs:
           # Optional secrets with sensible defaults
           port: ${{ secrets.FTP_PORT || 21 }}
           protocol: ${{ secrets.FTP_PROTOCOL || 'ftp' }}
+          # The host's TLS certificate is issued for s11.hosterpk.com, not the
+          # FTP hostname, so strict checking fails. The connection is still encrypted.
+          security: loose
           # Only the website folder is uploaded
           local-dir: ./html/
           # Folder on the server where the site lives. It must end with a slash.
-          server-dir: ${{ secrets.FTP_SERVER_DIR || './public_html/' }}
+          # This FTP account opens directly in the site root, so the default is ./
+          server-dir: ${{ secrets.FTP_SERVER_DIR || './' }}
           exclude: |
             **/.git*
             **/.git*/**
